@@ -1,0 +1,145 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="..\css\web1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function validation()
+{
+	if(document.getElementById('id1').value=="")
+	{
+     	alert("Please enter the name.");
+		return false;
+	}
+	if(document.getElementById('id2').value=="")
+	{
+	    alert("Please enter the age");
+		return false;
+	}
+	if(document.getElementById('id3').value=="")
+	{
+	    alert("Please enter Father's name");
+		return false;
+    }
+	if(document.getElementById('id4').value=="")
+	{
+	    alert("Please enter Mother's name");
+	    return false;
+	}
+	if(document.getElementById('id5').value=="")
+	{
+	alert("Please enter your percentage");
+	 return false;
+	}
+	if(document.getElementById('id6').value=="")
+	{
+	   alert("Please enter your percentage");
+	   return ;
+	}
+	if(document.getElementById('id7').value=="")
+	{
+    	alert("Please enter E-mail");
+	   return false;
+	}
+	if(document.getElementById('id8').value==""||document.getElementById('id8').value.length!=10)
+	{
+	    alert("Invalid mobile no.");
+	    return false;
+	}
+	if(document.getElementById('id9').value==""||document.getElementById('id9').value.length!=10)
+	{
+	    alert("Invalid mobile no.");
+        return false;
+	}
+	return myfunction();
+}
+</script>
+</head>
+<title>B.tech Forms</title>
+<body>
+<div class="parent">
+<div class="parent2">
+<div class="one">
+<img id="one" src="..\images\orian.jpg"></a>
+
+</div>
+<marquee class="one1">ORIAN Noida ranked 54th in the Engineering Category and 81st in the university category in the all India Ranking 2017 by NIRF, MHRD"</marquee>
+
+<div class="form">
+<form id="form">
+<input type="text" placeholder="Search..." required>
+<input type="button" value="Search"><br>
+<style>
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/login" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/people" class="fa fa-google"></a>
+<a href="https://in.linkedin.com/" class="fa fa-linkedin"></a>
+</form>
+</div>
+</div>
+<div class="two">
+<ul class="list">
+<li class="li"><a href="..\views\w1.html">Home</a></li>
+<li class="li"><a href="..\views\w2.htm">About us</a></li>
+<li class="li"><a href="..\views\admission.html">Admission</a></li>
+<li class="li"><a href="..\views\av.html">Reviews</a></li>
+</ul>
+</div>
+<h1><center><u>Fill the form carefully</center></u></h1>
+<div class="forms">
+<form class="for" method="get">
+<p>Name: <input id="id1" type="text" name="name" ></p>
+<p>Age: <input id="id2" type="text" name="age" ></p>
+<p>Father's Name: <input id="id3" type="text" name="fname"></p>
+<p>Mother's Name: <input id="id4" type="text" name="mname"></p>
+<p>12<sup>th</sup> percantage: <input id="id5" type="text" name="percntage" ></p>
+<p>10<sup>th</sup> percentage: <input id="id6" type="text" name="2percentage"></p>
+<p>Student's E-mail id:<input id="id7" type="email" ></p>
+<p>Student's mobile no.:<input type="text" value=" +91" size=1%>&nbsp;<input id="id8" type="text" ></p>
+<p>Father's mobile no.:<input id="id9" type="text" ></p>
+<p><b>Gender: </b></p><input  type="radio" name="gender" value="male"> Male
+   <input type="radio" name="gender" value="female"> Female<br><br>
+<input type="submit"  value="submit"  onclick="validation()">
+</form>
+<script>
+function myfunction() {
+    alert("your form has been submitted thankyou!!!");
+}
+</script>   
+   </div>
+</div>
+</body>
+</html>
